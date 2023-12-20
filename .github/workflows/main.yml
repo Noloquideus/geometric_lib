@@ -3,7 +3,7 @@ name: Run Unit Tests
 on:
   push:
     branches:
-      - main
+      - cicd_338729
 
 jobs:
   test:
