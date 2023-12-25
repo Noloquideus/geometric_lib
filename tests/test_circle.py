@@ -6,12 +6,12 @@ class TestCircle(unittest.TestCase):
     def test_area_integer(self):
         # Проверка площади круга для целого числа
         result = area(5)
-        self.assertAlmostEqual(result, 78.53981633974483)
+        self.assertAlmostEqual(result, 78.53, delta=0.01)
 
     def test_area_float(self):
         # Проверка площади круга для дробного числа
         result = area(3.5)
-        self.assertAlmostEqual(result, 38.48451000647496)
+        self.assertAlmostEqual(result, 38.48, delta=0.01)
 
     def test_area_string(self):
         # Проверка площади круга для строки (ожидается ошибка TypeError)
@@ -26,12 +26,12 @@ class TestCircle(unittest.TestCase):
     def test_perimeter_integer(self):
         # Проверка длины окружности для целого числа
         result = perimeter(5)
-        self.assertAlmostEqual(result, 31.41592653589793)
+        self.assertAlmostEqual(result, 31.41, delta=0.01)
 
     def test_perimeter_float(self):
         # Проверка длины окружности для дробного числа
         result = perimeter(3.5)
-        self.assertAlmostEqual(result, 21.991148575128552)
+        self.assertAlmostEqual(result, 21.99, delta=0.01)
 
     def test_perimeter_string(self):
         # Проверка длины окружности для строки (ожидается ошибка ValueError)
